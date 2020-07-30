@@ -13,7 +13,7 @@ body {
   font-weight: 300;
 }
 
-.header__inner {
+.header__inner, .products__slider-text {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
 }
@@ -77,12 +77,15 @@ html {
 }
 
 body {
+  height: 100%;
   min-width: 320px;
   overflow-x: hidden;
   position: relative;
   color: #fff;
   font-size: 17px;
   line-height: 26px;
+  margin: 0;
+  padding: 0;
 }
 
 ul,
@@ -122,13 +125,11 @@ input:focus {
 }
 
 .page-section {
-  min-height: 100vh;
   background-image: url("../images/page-bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
   position: relative;
-  padding: 74px 0 50px;
 }
 
 .page-section::before {
@@ -144,7 +145,10 @@ input:focus {
 }
 
 .page-section__wrapper {
+  min-height: 100vh;
+  position: relative;
   z-index: 1;
+  padding: 74px 0 50px;
 }
 
 .title {
@@ -152,6 +156,7 @@ input:focus {
   line-height: 53px;
   padding-left: 25px;
   margin-bottom: 55px;
+  padding-top: 160px;
 }
 
 .scroll__btn {
@@ -283,4 +288,61 @@ input:focus {
 
 .top__social-link:hover {
   opacity: 1;
+}
+
+.products__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 50px;
+}
+
+.products__text {
+  max-width: 440px;
+}
+
+.products__text p {
+  margin-bottom: 30px;
+}
+
+.products__slider-box {
+  position: relative;
+  padding-top: 110px;
+}
+
+.products__slider-text {
+  width: 285px;
+  position: absolute;
+  text-align: right;
+  font-size: 24px;
+  line-height: 28px;
+  bottom: 30px;
+  left: -150px;
+  z-index: 5;
+}
+
+.products__slider {
+  max-width: 560px;
+}
+
+.slider-btn {
+  padding: 16px 26px;
+  border: none;
+  background-color: #fff;
+  position: absolute;
+  bottom: -45px;
+  right: 0;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.slider-btn svg {
+  stroke: #000;
+}
+
+.slider-btn__left {
+  right: 60px;
 }
