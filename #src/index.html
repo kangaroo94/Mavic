@@ -5,44 +5,46 @@
 <body>
   @@include('components/_header.html')
   <!-- WRITE CODE HERE -->
-<section class="page-section">
-  <div class="container">
-    <div class="top__inner">
-      <h1 class="top__title">
-        Mavic 2 Pro
-      </h1>
-      <img src="images/mavic.png" alt="">
-      <p class="top__text">
-        Квадрокоптер Dji Mavic 2 Pro 
-        с профессиональной камерой Hasselblad
-      </p>
-      <ul class="top__social-list">
-        <li class="top__social-item">
-          <a class="top__social-link" href="#">
-            <img src="images/social/facebook.svg" alt="">
-          </a>
-        </li>
-        <li class="top__social-item">
-          <a class="top__social-link" href="#">
-            <img src="images/social/youtube.svg" alt="">
-          </a>
-        </li>
-        <li class="top__social-item">
-          <a class="top__social-link" href="#">
-            <img src="images/social/instagram.svg" alt="">
-          </a>
-        </li>
-      </ul>
+<section class="page-section top">
+  <div class="page-section__wrapper top__wrapper">
+    <div class="container">
+      <div class="top__inner">
+        <h1 class="top__title">
+          Mavic 2 Pro
+        </h1>
+        <img src="images/mavic.png" alt="">
+        <p class="top__text">
+          Квадрокоптер Dji Mavic 2 Pro 
+          с профессиональной камерой Hasselblad
+        </p>
+        <ul class="top__social-list">
+          <li class="top__social-item">
+            <a class="top__social-link" href="#">
+              <img src="images/social/facebook.svg" alt="">
+            </a>
+          </li>
+          <li class="top__social-item">
+            <a class="top__social-link" href="#">
+              <img src="images/social/youtube.svg" alt="">
+            </a>
+          </li>
+          <li class="top__social-item">
+            <a class="top__social-link" href="#">
+              <img src="images/social/instagram.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <div class="scroll__btn">
-    <a href="#">
-      <img src="images/arrow-down.svg" alt="">
-    </a>
+    <div class="scroll__btn">
+      <a href="#products">
+        <img src="images/arrow-down.svg" alt="">
+      </a>
+    </div>
   </div>
 </section>
 
-<section class="page-section products">
+<section id="products" class="page-section products">
   <div class="container">
     <h3 class="title products__title">
       Что такое Mavic 2 Pro?
@@ -62,35 +64,35 @@
         </p>
         <div class="products__slider">
           <div class="products__slider-item">
-            <img src="images/slider-1.jpg" alt="" class="products__slider-img">
+            <img class="products__slider-img" src="images/slider-1.jpg" alt="" >
           </div>
           <div class="products__slider-item">
-            <img src="images/slider-1.jpg" alt="" class="products__slider-img">
+            <img class="products__slider-img" src="images/slider-1.jpg" alt="">
           </div>
           <div class="products__slider-item">
-            <img src="images/slider-1.jpg" alt="" class="products__slider-img">
+            <img class="products__slider-img" src="images/slider-1.jpg" alt="">
           </div>
           <div class="products__slider-item">
-            <img src="images/slider-1.jpg" alt="" class="products__slider-img">
+            <img class="products__slider-img" src="images/slider-1.jpg" alt="">
           </div>
           <div class="products__slider-item">
-            <img src="images/slider-1.jpg" alt="" class="products__slider-img">
+            <img class="products__slider-img" src="images/slider-1.jpg" alt="">
           </div>
           <div class="products__slider-item">
-            <img src="images/slider-1.jpg" alt="" class="products__slider-img">
+            <img class="products__slider-img" src="images/slider-1.jpg" alt="">
           </div>
         </div>
       </div>
     </div>
   </div>
   <div class="scroll__btn">
-    <a href="#">
+    <a href="#benefits">
       <img src="images/arrow-down.svg" alt="">
     </a>
   </div>
 </section>
 
-<section class="page-section benefits">
+<section id="benefits" class="page-section benefits">
   <div class="container">
     <h3 class="title">
       Преимущества
@@ -158,13 +160,13 @@
     </div>
   </div>
   <div class="scroll__btn">
-    <a href="#">
+    <a href="#specification">
       <img src="images/arrow-down.svg" alt="">
     </a>
   </div>
 </section>
 
-<section class="page-section specification">
+<section id="specification" class="page-section specification">
   <div class="container">
     <h3 class="title">
       Характеристики
@@ -215,13 +217,13 @@
     </div>
   </div>
   <div class="scroll__btn">
-    <a href="#">
+    <a href="#questions">
       <img src="images/arrow-down.svg" alt="">
     </a>
   </div>
 </section>
 
-<section class="page-section questions">
+<section id="questions" class="page-section questions">
   <div class="container">
     <h3 class="title">
       Остались вопросы?
@@ -262,13 +264,13 @@
     </div>
   </div>
   <div class="scroll__btn">
-    <a href="#">
+    <a href="#contacts">
       <img src="images/arrow-down.svg" alt="">
     </a>
   </div>
 </section>
 
-<section class="page-section contacts">
+<section id="contacts" class="page-section contacts">
   <div class="container">
     <h3 class="title">
       Контакты
@@ -345,11 +347,6 @@
         </li>
       </div>
     </div>
-  </div>
-  <div class="scroll__btn">
-    <a href="#">
-      <img src="images/arrow-down.svg" alt="">
-    </a>
   </div>
 </section>
 
