@@ -58,3 +58,16 @@
         margin-right: 0;
     }
 }
+@media (max-width: 540px) {
+    .top__title {
+        display: none;
+    }
+    .top__text {
+        margin: 15px 0 30%;
+    }
+    .scroll__btn {
+        padding: 13px 0;
+    }
+}
+
+

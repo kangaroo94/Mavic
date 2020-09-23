@@ -171,7 +171,6 @@ input:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  cursor: pointer;
 }
 
 .header {
@@ -228,6 +227,10 @@ input:focus {
 
 .menu__list-item + .menu__list-item {
   padding-left: 20px;
+}
+
+.menu__list-item.active a {
+  color: red;
 }
 
 .menu__list-phone {
@@ -858,5 +861,17 @@ input:focus {
   }
   .header__btn {
     margin-right: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .top__title {
+    display: none;
+  }
+  .top__text {
+    margin: 15px 0 30%;
+  }
+  .scroll__btn {
+    padding: 13px 0;
   }
 }

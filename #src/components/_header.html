@@ -1,30 +1,32 @@
 <header class="header">
     <div class="container">
-        <div class="header__inner">
-            <a class="logo" href="#home">
-                <picture class="logo__img">
-                    <source srcset="images/logo-mobile.png" media="(max-width: 600px)">
-                    <img src="images/logo.png" alt="">
-                </picture>
-            </a>
+        <div id="header__nav" class="header__inner">
+            <div data-menuanchor="top">
+                <a class="logo" href="#top">
+                    <picture class="logo__img">
+                        <source srcset="images/logo-mobile.png" media="(max-width: 600px)">
+                        <img src="images/logo.png" alt="">
+                    </picture>
+                </a>
+            </div>
             <nav class="menu">
                 <button class="menu__btn">
                     <span class="menu__btn-line"></span>
                 </button>
                 <ul class="menu__list">
-                    <li class="menu__list-item">
+                    <li class="menu__list-item" data-menuanchor="products">
                         <a class="menu__list-link" href="#products">О ДРОНЕ</a>
                     </li>
-                    <li class="menu__list-item">
+                    <li class="menu__list-item" data-menuanchor="benefits">
                         <a class="menu__list-link" href="#benefits">ПРЕИМУЩЕСТВА</a>
                     </li>
-                    <li class="menu__list-item">
+                    <li class="menu__list-item" data-menuanchor="specification">
                         <a class="menu__list-link" href="#specification">ХАРАКТЕРИСТИКИ</a>
                     </li>
-                    <li class="menu__list-item">
+                    <li class="menu__list-item" data-menuanchor="questions">
                         <a class="menu__list-link" href="#questions">ВОПРОСЫ</a>
                     </li>
-                    <li class="menu__list-item">
+                    <li class="menu__list-item" data-menuanchor="contacts">
                         <a class="menu__list-link" href="#contacts">КОНТАКТЫ</a>
                     </li>
                     <li class="menu__list-phone">

@@ -145,6 +145,7 @@ gulp.task("script", function () {
 			"node_modules/jquery/dist/jquery.js",
 			"node_modules/slick-carousel/slick/slick.js",
 			"node_modules/fullpage.js/dist/fullpage.js",
+			"node_modules/fullpage.js/vendors/scrolloverflow.js",
 			
 		])
 		.pipe(size())
