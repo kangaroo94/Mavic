@@ -805,6 +805,11 @@ input:focus {
     font-size: 16px;
     line-height: 22px;
   }
+  .header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 25px 0;
+    top: 0;
+  }
   .top__title {
     font-size: 75px;
     line-height: 90px;
@@ -834,14 +839,30 @@ input:focus {
     right: 0;
     z-index: 5;
   }
+  .benefits .title {
+    padding-top: 10px;
+  }
+  .benefits__item {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .benefits__item {
+    width: 45%;
+  }
+  .benefits__item:first-child::before {
+    width: 40%;
+  }
+  .benefits__item:nth-child(3)::before {
+    width: 35%;
+  }
+  .benefits__item:nth-child(3)::after {
+    width: 80%;
+  }
 }
 
 @media (max-width: 1100px) {
-  .header {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 25px 0;
-    top: 0;
-  }
   .menu {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -981,6 +1002,32 @@ input:focus {
   .products__slider-box {
     padding-right: 20px;
   }
+  .benefits__item:first-child::before,
+  .benefits__item:nth-child(3)::before,
+  .benefits__item:nth-child(3)::after {
+    display: none;
+  }
+  .benefits__items {
+    display: block;
+  }
+  .benefits__item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .benefits__item:nth-child(even) {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .benefits__item:nth-child(even) {
+    margin-left: 0;
+  }
+  .benefits__item:nth-child(3) {
+    margin-left: 0;
+  }
+  .benefits__info {
+    width: 80%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1014,6 +1061,21 @@ input:focus {
   }
 }
 
+@media (max-width: 787px) {
+  .benefits__item:nth-child(even) {
+    margin-left: 0;
+  }
+  .benefits__items {
+    padding-left: 0;
+  }
+  .benefits__item:nth-child(3) {
+    margin-left: 0;
+  }
+  .benefits__info {
+    width: 100%;
+  }
+}
+
 @media (max-width: 680px) {
   .products__inner {
     padding-left: 0;
@@ -1032,7 +1094,7 @@ input:focus {
     margin-bottom: 100px;
   }
   .products__slider {
-    min-width: 100%;
+    max-width: 100%;
   }
   .products__slider::before {
     width: 100%;
@@ -1055,6 +1117,22 @@ input:focus {
   }
   .scroll__btn {
     padding: 13px 0;
+  }
+  .benefits__num {
+    display: none;
+  }
+  .benefits__item {
+    display: block;
+  }
+  .benefits__img {
+    padding: 20px 0;
+  }
+  .benefits__img img {
+    display: block;
+    margin-left: auto;
+  }
+  .benefits__img::before {
+    top: 8px;
   }
 }
 
